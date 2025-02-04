@@ -13,6 +13,7 @@
 
     <!--CSS Files-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="assets/css/style.css" rel="stylesheet"/>
@@ -36,7 +37,6 @@
        <!--start to header-->
        <header class="top-header fixed-top border-bottom d-flex align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-            <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i class="bi bi-list"></i></a></div>
             <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.webp" width="95" alt=""></a></div>
             <!-- <form class="searchbar">
               <div class="position-absolute top-50 translate-middle-y search-icon start-0"><i class="bi bi-search"></i></div>
@@ -50,12 +50,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link position-relative" href="cart.html">
+              <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav">
+                <a href="javascript:;">
                   <div class="cart-badge">8</div>
-                  <i class="bi bi-bag"></i>
+                  <i class="bi bi-cart4"></i>
                 </a>
-              </li>
+              </div>
             </ul>
         </nav>
        </header>
@@ -63,46 +63,6 @@
 
       <!--start to page content-->
        <div class="page-content">
-
-         <!--start category-->
-          <!-- <div class="category">
-            <div class="d-flex align-items-center gap-3 justify-content-between">
-                <div class="category-img">
-                  <figure>
-                    <a href="shop.html">
-                      <img src="assets/images/category/01.webp" class="img-fluid" alt="">
-                    </a>
-                     <figcaption>Men</figcaption>
-                   </figure>
-                </div>
-                <div class="category-img">
-                  <figure>
-                    <a href="shop.html">
-                      <img src="assets/images/category/02.webp" class="img-fluid" alt="">
-                    </a>
-                     <figcaption>Women</figcaption>
-                   </figure>
-                </div>
-                <div class="category-img">
-                  <figure>
-                    <a href="shop.html">
-                      <img src="assets/images/category/03.webp" class="img-fluid" alt="">
-                    </a>
-                     <figcaption>Kids</figcaption>
-                   </figure>
-                </div>
-                <div class="category-img">
-                  <figure>
-                    <a href="shop.html">
-                      <img src="assets/images/category/04.webp" class="img-fluid" alt="">
-                    </a>
-                     <figcaption>On Sales</figcaption>
-                   </figure>
-                </div>
-
-              </div>
-          </div> -->
-        <!--end category-->
 
          <div class="py-2"></div>
 
@@ -114,78 +74,15 @@
             <div class="banner-item">
               <a href="shop.html"><img src="assets/images/banner-sliders/02.webp" class="img-fluid rounded-3" alt=""></a>
             </div>
-            <!-- <div class="banner-item">
+            <div class="banner-item">
               <a href="shop.html"><img src="assets/images/banner-sliders/03.webp" class="img-fluid rounded-3" alt=""></a>
             </div>
-            <div class="banner-item">
-              <a href="shop.html"><img src="assets/images/banner-sliders/04.webp" class="img-fluid rounded-3" alt=""></a>
-            </div>
-            <div class="banner-item">
-              <a href="shop.html"><img src="assets/images/banner-sliders/05.webp" class="img-fluid rounded-3" alt=""></a>
-            </div>
-            <div class="banner-item">
-              <a href="shop.html"><img src="assets/images/banner-sliders/06.webp" class="img-fluid rounded-3" alt=""></a>
-            </div> -->
           </div>
          <!--end banner slider-->
 
 
          <div class="py-2"></div>
 
-          <!--start features-->
-            <!-- <div class="features-section">
-            <div class="row row-cols-2 row-cols-md-4 g-3">
-              <div class="col d-flex">
-                <div class="card rounded-3 w-100">
-                  <div class="card-body">
-                    <div class="icon-wrapper text-center">
-                      <div class="noti-box mb-1 mx-auto bg-primary">
-                        <i class="bi bi-truck"></i>
-                      </div>
-                      <p class="fw-bold mb-0 text-dark">Free Delivery</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col d-flex">
-                <div class="card rounded-3 w-100">
-                  <div class="card-body">
-                    <div class="icon-wrapper text-center">
-                      <div class="noti-box mb-1 mx-auto bg-purple">
-                        <i class="bi bi-credit-card"></i>
-                      </div>
-                      <p class="fw-bold mb-0 text-dark">Secure Payment</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col d-flex">
-                <div class="card rounded-3 w-100">
-                  <div class="card-body">
-                    <div class="icon-wrapper text-center">
-                      <div class="noti-box mb-1 mx-auto bg-red">
-                        <i class="bi bi-minecart-loaded"></i>
-                      </div>
-                      <p class="fw-bold mb-0 text-dark">Free Returns</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col d-flex">
-                <div class="card rounded-3 w-100">
-                  <div class="card-body">
-                    <div class="icon-wrapper text-center">
-                      <div class="noti-box mb-1 mx-auto bg-green">
-                        <i class="bi bi-headset"></i>
-                      </div>
-                      <p class="fw-bold mb-0 text-dark">24/7 Support</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div> -->
-          <!--end features-->
 
            <div class="py-2"></div>
 
@@ -300,126 +197,6 @@
           </div>
           <!--end reviews section-->
 
-          <div class="py-2"></div>
-
-          <!--start sales category section with slider-->
-           <!-- <div class="sales-category-wrapper">
-            <h4 class="my-2 text-center fw-bold section-title">Trending In Shoes</h4>
-              <div class="sales-category-slider"> 
-                <div class="card rounded-0 rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/trending-shoes/01.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Women Heels</p>
-                  </div>
-                </div>
-                <div class="card rounded-0 rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/trending-shoes/02.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Sports Shoes</p>
-                  </div>
-                </div>
-                <div class="card rounded-0 rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/trending-shoes/03.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Leather Shoes</p>
-                  </div>
-                </div>
-                <div class="card rounded-0 rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/trending-shoes/04.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Sneakes</p>
-                  </div>
-                </div>
-
-              </div>
-           </div> -->
-          <!--end sales section with slider-->
-
-          <div class="py-2"></div>
-
-          <!--start brands slider-->
-          <!-- <div class="sales-category-wrapper">
-            <h4 class="my-2 text-center fw-bold section-title">Top Brands</h4>
-              <div class="brands-slider"> 
-                <div class="card rounded-3">
-                 <div class="card-body">
-                   <a href="shop.html"><img src="assets/images/brands/01.webp" class="img-fluid" alt=""></a>
-                 </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/02.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/03.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/04.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/05.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/06.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/07.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-                <div class="card rounded-3">
-                  <div class="card-body">
-                    <a href="shop.html"><img src="assets/images/brands/08.webp" class="img-fluid" alt=""></a>
-                  </div>
-                </div>
-
-              </div>
-           </div> -->
-          <!--end brands slider-->
-
-          <div class="py-2"></div>
-
-          <!--start sales category section with slider-->
-          <!-- <div class="sales-category-wrapper">
-            <h4 class="my-2 text-center fw-bold section-title">Accessories</h4>
-              <div class="sales-accessories-slider"> 
-                <div class="card rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/accessories/01.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Women Caps</p>
-                  </div>
-                </div>
-                <div class="card rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/accessories/02.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Men Belts</p>
-                  </div>
-                </div>
-                <div class="card rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/accessories/03.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Ladies Purse</p>
-                  </div>
-                </div>
-                <div class="card rounded-3 overflow-hidden">
-                  <a href="shop.html"><img src="assets/images/accessories/04.webp" class="img-fluid" alt=""></a>
-                  <div class="card-body text-center">
-                     <p class="mb-0 fw-bold">Headphones</p>
-                  </div>
-                </div>
-
-              </div>
-           </div> -->
-          <!--end sales section with slider-->
 
        </div>
      <!--end to page content-->
@@ -441,13 +218,7 @@
                 <div class="name">Articulos</div>
               </div>
             </a>
-            <!-- <a class="nav-link" href="profile.html">
-              <div class="d-flex flex-column align-items-center">
-                <div class="icon"><i class="bi bi-person"></i></div>
-                <div class="name">Perfil de Usuario</div>
-              </div>
-            </a> -->
-            <a class="nav-link" href="contact-us.html">
+            <a class="nav-link" href="about-us.html">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon"><i class="bi bi-question-circle"></i></div>
                 <div class="name">Contacto</div>
@@ -462,118 +233,84 @@
 
      <!--start sidenav-->
      <div class="sidenav">
-       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
-        <div class="offcanvas-header bg-dark border-bottom border-light">
+       <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasSidenav" style="max-width: 390px;">
+        <div class="offcanvas-header bg-white border-bottom border-light">
            <div class="hstack gap-3">
-               <div class="">
-                 <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt=""/>
-               </div>
                <div class="details">
-                 <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+                 <h6 class="mb-0 text-dark">Carrito de Compras</h6>
                </div>
            </div>
-          <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+          <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-dark"></i></div>
         </div>
         <div class="offcanvas-body p-0">
-          <nav class="sidebar-nav">
-            <ul class="metismenu" id="sidenav">
-              <li>
-                <a href="home.html">
-                   <i class="bi bi-house-door me-2"></i>
-                    Home
-                 </a>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                  <i class="bi bi-person-circle me-2"></i>
-                    Account
-                </a>
-                <ul>
-                  <li><a href="profile.html">Profile</a></li>
-                  <li><a href="my-orders.html">My Orders</a></li>
-                  <li><a href="my-profile.html">My Profile</a></li>
-                  <li><a href="addresses.html">Addresses</a></li>
-                  <li><a href="notification.html">Notification</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                   <i class="bi bi-basket3 me-2"></i>
-                   Shop Pages
-                 </a>
-                <ul>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li><a href="cart.html">Cart</a></li>
-                  <li><a href="wishlist.html">Wishlist</a></li>
-                  <li><a href="product-details.html">Product Details</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                  <li><a href="order-tracking.html">Order Tracking</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                   <i class="bi bi-credit-card me-2"></i>
-                   Payment
-                 </a>
-                <ul>
-                  <li><a href="payment-method.html">Payment Method</a></li>
-                  <li><a href="payment-error.html">Payment Error</a></li>
-                  <li><a href="payment-completed.html">Payment Completed</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                   <i class="bi bi-grid me-2"></i>
-                   Category
-                 </a>
-                <ul>
-                  <li><a href="category-grid.html">Category Grid</a></li>
-                  <li><a href="category-list.html">Category List</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                   <i class="bi bi-lock me-2"></i>
-                   Authentication
-                 </a>
-                <ul>
-                  <li><a href="authentication-log-in.html">Log In</a></li>
-                  <li><a href="authentication-sign-up.html">Sign Up</a></li>
-                  <li><a href="authentication-otp-varification.html">Verification</a></li>
-                  <li><a href="authentication-change-password.html">Change Password</a></li>
-                  <li><a href="authentication-splash.html">Splash</a></li>
-                  <li><a href="authentication-splash-2.html">Splash 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="javascript:;">
-                   <i class="bi bi-star me-2"></i>
-                   Customer Reviews
-                 </a>
-                <ul>
-                  <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
-                  <li><a href="write-a-review.html">Write a Review</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="about-us.html">
-                   <i class="bi bi-emoji-smile me-2"></i>
-                   About Us
-                 </a>
-              </li>
-              <li>
-                <a href="contact-us.html">
-                   <i class="bi bi-headphones me-2"></i>
-                   Contact Us
-                 </a>
-              </li>
-            </ul>
-          </nav>
+          <div class="d-flex flex-column h-100 overflow-y-scroll bg-white shadow-lg">
+            <div class="flex-grow-1 overflow-y-auto p-2">
+              <div class="cart-item mt-2">
+                <div class="overflow-hidden">
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex align-items-center rounded border border-light bg-white p-3">
+                      <div class="flex-shrink-1 overflow-hidden rounded p-1">
+                        <img src="assets/images/similar/01.webp" alt="Vestido de color" class="img-fluid rounded">
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="text-muted fw-medium">Carolina Herrera Agua de Perfume para Dama - 1 x 2.7 onzas</div>
+                        <div class="price">
+                          <div class="d-flex align-items-baseline justify-content-end gap-1 text-muted fw-semibold">
+                            <div>$</div>
+                            <div>2.250</div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                          <div class="delete-item-button" item="[object Object]">
+                            <button class="border border-light rounded-circle text-muted" style="width: 40px; height: 40px;">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon" width="20px" height="20px" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.288T4 5t.288-.712T5 4h4q0-.425.288-.712T10 3h4q.425 0 .713.288T15 4h4q.425 0 .713.288T20 5t-.288.713T19 6v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zm-7 11q.425 0 .713-.288T11 16V9q0-.425-.288-.712T10 8t-.712.288T9 9v7q0 .425.288.713T10 17m4 0q.425 0 .713-.288T15 16V9q0-.425-.288-.712T14 8t-.712.288T13 9v7q0 .425.288.713T14 17M7 6v13z"></path>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="cart-quantity-input">
+                            <div class="d-flex justify-content-between rounded-pill border border-light text-muted" style="width: 145px;">
+                              <button class="rounded-start border-0 px-2">
+                                <div class="d-flex align-items-center justify-content-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2"></path>
+                                  </svg>
+                                </div>
+                              </button>
+                              <input maxlength="5" class="form-control text-center border-0" style="height: 42px; width: 64px;" value="1"/>
+                              <button class="rounded-end border-0 px-2">
+                                <div class="d-flex align-items-center justify-content-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2"></path>
+                                  </svg>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="offcanvas-footer border-top p-3">
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="DarkMode" onchange="toggleTheme()">
-            <label class="form-check-label" for="DarkMode">Dark Mode</label>
+          <div class="d-flex justify-content-between text-dark fw-medium pb-3">
+            <div class="mb-0">
+             <h6 class="fw-bold">Subtotal</h6>
+            </div>
+            <div class="mb-0">
+             <h6 class="fw-bold">$262.00</h6>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn text-white rounded-3 bg-green flex-fill">
+              Preparar pedido
+            </button>
           </div>
         </div>
       </div>
@@ -581,9 +318,94 @@
    <!--end sidenav-->
 
 
-    </div>
+  </div>
    <!--end wrapper-->
-
+  
+   <div class="modal fade rounded-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <div class="p-2 bd-highlight">
+            <h6 class="text-center text-muted mb-0 fw-bold">Nos compartes tus datos para contactarte.</h6>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column align-items-center">
+            <div class="p-2 w-100">
+              <input 
+              class="form-control rounded-pill border border-secondary px-3 py-2 text-dark placeholder-muted focus-outline" 
+              type="text" 
+              placeholder="Introduzca su nombre" 
+              style="outline-color: rgb(204, 49, 86);">
+            </div>
+            <div class="d-flex p-2 w-100">
+              <div class="d-flex p-2 w-30">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    +51
+                  </button>
+                  <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+                    <li>
+                      <button class="dropdown-item" >
+                        <div class="d-flex gap-2 items-center">
+                          <div class="r-icon flex align-middle justify-center">
+                            <svg data-v-f43f2976="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon" width="22px" height="22px" viewBox="0 0 512 512"><mask id="iconifyVue659"><circle cx="256" cy="256" r="256" fill="#fff"></circle></mask><g mask="url(#iconifyVue659)"><path fill="#d80027" d="M0 0h167l86 41.2L345 0h167v512H345l-87.9-41.4L167 512H0z"></path><path fill="#eee" d="M167 0h178v512H167z"></path></g></svg>
+                          </div> PERU (+51)
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" >
+                        <div class="d-flex gap-2 items-center">
+                          <div class="r-icon flex align-middle justify-center">
+                            <svg data-v-f43f2976="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon" width="22px" height="22px" viewBox="0 0 512 512"><mask id="iconifyVue530"><circle cx="256" cy="256" r="256" fill="#fff"></circle></mask><g mask="url(#iconifyVue530)"><path fill="#d80027" d="m0 256l254.5-51.3L512 256v256H0z"></path><path fill="#0052b4" d="M0 0h256l52.7 132.8L256 256H0z"></path><path fill="#eee" d="M256 0h256v256H256zM152.4 89l16.6 51h53.6l-43.4 31.6l16.6 51l-43.4-31.5l-43.4 31.5l16.6-51L82.2 140h53.6z"></path></g></svg>
+                          </div> CHILE (+56)
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" >
+                        <div class="d-flex gap-2 items-center">
+                          <div class="r-icon flex align-middle justify-center">
+                            <svg data-v-f43f2976="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon" width="22px" height="22px" viewBox="0 0 512 512"><mask id="iconifyVue721"><circle cx="256" cy="256" r="256" fill="#fff"></circle></mask><g mask="url(#iconifyVue721)"><path fill="#0052b4" d="m0 144.7l255.3-36.5L512 144.7v222.6L250.5 407L0 367.3z"></path><path fill="#ffda44" d="M0 0h512v144.7H0z"></path><path fill="#d80027" d="M0 367.3h512V512H0z"></path><path fill="#eee" d="M443.4 306.4L429.8 317l6 16.1l-14.3-9.6l-13.5 10.7l4.7-16.5l-14.2-9.6l17.1-.6l4.7-16.5l6 16.1zm-34.7-60l-9 14.5l11 13.2L394 270l-9 14.6l-1.3-17l-16.6-4.3l15.9-6.4l-1.2-17l11 13zm-53-44.5l-3.6 16.8l14.9 8.4l-17 1.8l-3.6 16.8l-7-15.7l-17 1.8l12.7-11.5l-7-15.6l14.8 8.6zm-65-23.7l2.3 17l17 3l-15.5 7.5l2.4 17l-12-12.4l-15.4 7.6l8-15.2l-11.8-12.3l16.9 3zm-69.3 0l8 15.1l17-3l-12 12.4l8 15.2l-15.4-7.6l-11.9 12.4l2.4-17l-15.4-7.5l16.9-3zm-65 23.7l12.7 11.5l14.8-8.6l-7 15.7l12.8 11.4l-17-1.8l-7 15.7l-3.7-16.7l-17-1.8l14.8-8.5zm-53.1 44.5l15.9 6.4l11-13l-1.2 17l16 6.4l-16.7 4.2l-1.2 17L118 270l-16.7 4.2l11-13.2zm-34.7 60l17.2.5l5.9-16l4.7 16.4l17.1.6l-14.2 9.6l4.7 16.6l-13.5-10.6l-14.2 9.6l5.9-16z"></path></g></svg>
+                          </div> VENEZUELA (+58)
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" >
+                        <div class="d-flex gap-2 items-center">
+                          <div class="r-icon flex align-middle justify-center">
+                            <svg data-v-f43f2976="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon" width="22px" height="22px" viewBox="0 0 512 512"><mask id="iconifyVue733"><circle cx="256" cy="256" r="256" fill="#fff"></circle></mask><g mask="url(#iconifyVue733)"><path fill="#d80027" d="m0 384l255.8-29.7L512 384v128H0z"></path><path fill="#0052b4" d="m0 256l259.5-31L512 256v128H0z"></path><path fill="#ffda44" d="M0 0h512v256H0z"></path></g></svg>
+                          </div> COLOMBIA (+57)
+                        </div>
+                      </button>
+                    </li>
+                    <!-- Add more country codes as needed -->
+                  </ul>
+                </div>
+              </div>
+              <div class="p-2 flex-fill">
+                <input 
+                class="form-control rounded-pill border border-secondary px-3 py-2 text-dark placeholder-muted focus-outline" 
+                type="text" 
+                placeholder="Introduzca su telefono" 
+                style="outline-color: rgb(204, 49, 86);">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 flex-nowrap">
+          <a class="btn btn-primary" data-bs-dismiss="modal offcanvas" href="home.html">Continuar Vitrineando</a>
+          <a class="btn btn-success" data-bs-dismiss="modal offcanvas" href="https://api.whatsapp.com/send?phone=+51963233869&text=Your%20predefined%20message%20here" target="_blank" ><i class="bi bi-whatsapp me-2"></i>Pedirlo por Whastapp</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--JS Files-->  
     <script src="assets/js/bootstrap.bundle.min.js"></script>
