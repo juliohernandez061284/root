@@ -6,8 +6,6 @@
     <title>Shopingo - eCommerce Mobile HTML Template</title>
 
      <!-- Plugins -->
-     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
-     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css" />
      <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" />
      <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
 
@@ -17,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="assets/css/style.css" rel="stylesheet"/>
-    <link href="assets/css/dark-theme.css" rel="stylesheet"/>
   </head>
   <body>
 
@@ -37,19 +34,12 @@
        <!--start to header-->
        <header class="top-header fixed-top border-bottom d-flex align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-            <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.webp" width="95" alt=""></a></div>
-            <!-- <form class="searchbar">
-              <div class="position-absolute top-50 translate-middle-y search-icon start-0"><i class="bi bi-search"></i></div>
-              <input class="form-control px-5" type="text" placeholder="Search for anything">
-              <div class="position-absolute top-50 translate-middle-y end-0 search-close-icon"><i class="bi bi-x-lg"></i></div>
-            </form> -->
+            <div class="brand-logo">
+              <a href="javascript:;">
+                <img src="assets/images/logo.webp" width="95" alt="">
+              </a>
+            </div>
             <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
-              <!-- <li class="nav-item mobile-search-button">
-                <a class="nav-link" href="javascript:;"><i class="bi bi-search"></i></a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
-              </li>
               <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav">
                 <a href="javascript:;">
                   <div class="cart-badge">8</div>
@@ -212,12 +202,12 @@
                 <div class="name">Bienvenido</div>
               </div>
             </a>
-            <a class="nav-link" href="category-list.html">
+            <div class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav">
               <div class="d-flex flex-column align-items-center">
-                <div class="icon"><i class="bi bi-grid"></i></div>
-                <div class="name">Articulos</div>
+                <div class="icon"><i class="bi bi-cart4"></i></div>
+                <div class="name">Comprar</div>
               </div>
-            </a>
+            </div>
             <a class="nav-link" href="about-us.html">
               <div class="d-flex flex-column align-items-center">
                 <div class="icon"><i class="bi bi-question-circle"></i></div>
@@ -411,8 +401,8 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/cookies-theme-switcher.js"></script>
-    <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+    <!-- <script src="assets/js/cookies-theme-switcher.js"></script> -->
+    <!-- <script src="assets/plugins/metismenu/metisMenu.min.js"></script> -->
     <script src="assets/plugins/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/index.js"></script>

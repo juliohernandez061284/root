@@ -180,6 +180,14 @@ a {
     color: #212529; 
 }
 
+.wrapper .page-footer .navbar div.nav-link {
+    color: #212529; 
+}
+
+.wrapper .page-footer .navbar div.nav-link .icon {
+    font-size: 20px;
+ }
+
 
 .wrapper .page-footer .navbar a.nav-link .icon {
    font-size: 20px;
